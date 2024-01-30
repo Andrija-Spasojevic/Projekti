@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vojna Oprema - Jakne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Vojne Opreme">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="jakne.html" class="active">Jakne</a></li>
+                <li><a href="pantalone.html">Pantalone</a></li>
+                <li><a href="rancevi.html">Rančevi</a></li>
+                <li><a href="cizme.html">Čizme</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-section">
+            <h2 class="naslov">Jakne</h2>
+             <div class="product-container">
+                <a href="vojnavetrovka.html" class="removeunderline">
+                 <div class="product-item">
+                   <img src="vetrovka.png" alt="Taktička jakna model 1">
+                    <p>Vojna vetrovka</p>
+                    <p class="price">5,500.00 RSD</p>
+                </div></a>
+                <a href="taktickiSuskavac.html" class="removeunderline">
+                <div class="product-item">
+                    
+                    <img src="jakna.jpeg" alt="Taktička jakna model 2">
+                    <p>Taktička jakna</p>
+                    <p class="price">4,500.00 RSD</p>
+                </div>
+                </a>
+                <a href="taktickaJakna2.html" class="removeunderline">
+                    <div class="product-item">
+                        <img src="jakna2.jpeg" alt="Taktička jakna model 4">
+                        <p>Softshell jakna</p >
+                        <p class="price">5,799.00 RSD</p>
+                    </div>
+                </a>
+                    <div class="product-item">
+                        <img src="jakna6.png" alt="Taktička jakna model 4">
+                        <p>Zimska vojna jakna</p>
+                        <p class="price">3,999.00 RSD</p>
+                    </div>
+            </div>
+        </section>
+        <section class="product-section">
+            <a href="vojnaVetrovka2.html" class="removeunderline">
+            <div class="product-container">
+                <div class="product-item">
+                    <img src="jakna3.jpeg" alt="Taktička jakna model 4">
+                    <p>Pentagon jakna</p>
+                    <p class="price">8,500.00 RSD</p>
+                </div>
+            </a>
+            <a href="vojnaMaskirna.html" class="removeunderline">
+                <div class="product-item">
+                    <img src="jakna4.jpeg" alt="Taktička jakna model 5">
+                    <p>Vojna maskirna jakna</p>
+                    <p class="price">7,200.00 RSD</p>
+                </div>
+            </a>
+            <a href="UrbanMaskirna.html" class="removeunderline">
+                    <div class="product-item">
+                        <img src="jakna5.png" alt="Taktička jakna model 4">
+                        <p>Urban maskirna jakna</p>
+                        <p class="price">4,800.00 RSD</p>
+                    </div>
+                </a>
+                <a href="PilotskaJakna.html" class="removeunderline">
+                    <div class="product-item">
+                        <img src="jakna7.png" alt="Taktička jakna model 5">
+                        <p>Pilotska jakna</p>
+                        <p class="price">7,500.00 RSD</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="product-section">
+            <a href="vijetnamkaPilotska.htmlp" class="removeunderline">
+            <div class="product-container">
+                    <div class="product-item">
+                        <img src="jakna8.jpg" alt="Taktička jakna model 4">
+                        <p>Vijetnamka, pilotska</p>
+                        <p class="price">8,500.00 RSD</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Vojna Oprema</p>
+    </footer>
+    <div id="korpa" class="korpa-sidebar">
+        <button onclick="toggleKorpaSidebar()" class="close-korpa">X</button>
+        <h2>Vaša Korpa je Prazna</h2>
+        <div class="korpa-actions">
+            <button onclick="window.location.href='index.html'">Pocetna</button>
+            <button onclick="toggleKorpaSidebar()">Nastavi sa kupovinom</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

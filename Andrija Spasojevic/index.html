@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vojna Oprema</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header> 
+            <div class="logo">
+                <a href="index.html">
+                <img src="logo.png" alt="Logo Vojne Opreme">
+                </a>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Početna</a></li>
+                <li><a href="jakne.html">Jakne</a></li>
+                <li><a href="pantalone.html">Pantalone</a></li>
+                <li><a href="rancevi.html">Rančevi</a></li>
+                <li><a href="cizme.html">Čizme</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="background-container">
+            <section class="intro">
+            <h1>MILITARY SHOP</h1>
+            <p>Online prodavnica vojne opreme, odeće i obuće.</p>
+            </section>
+        </div>
+        <section class="featured-products">
+            <div class="product-section">
+                <h2 class="naslov">Istaknuto</h2>
+                <div class="product-container">
+                    <a href="gtxDuboke.html" class="product-item">
+                        <img src="cizme.jpeg" alt="Taktičke cizme">
+                        <p>Cizme Gtx duboke</p>
+                        <p class="price">14,200.00 RSD</p>
+                    </a>
+                    <a href="vojnaVetrovka2.html" class="product-item">
+                        <img src="jakna3.jpeg" alt="Taktička jakna">
+                        <p>Taktička jakna</p>
+                        <p class="price">8,500.00 RSD</p>
+                    </a>
+                    <a href="taktickePantalone.html" class="product-item">
+                        <img src="pantalone2.png" alt="Taktičke rukavice">
+                        <p>Taktičke pantalone</p>
+                        <p class="price">4,790.00 RSD</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="product-section">
+                <div class="product-container">
+                    <a href="taktickePantalone2.html" class="product-item">
+                        <img src="pantalone.jpeg" alt="Taktičke pantalone">
+                        <p>Taktičke pantalone</p>
+                        <p class="price">4,200.00 RSD</p>
+                    </a>
+                    <a href="taktickiSuskavac.html" class="product-item">
+                        <img src="jakna.jpeg" alt="jakna">
+                        <p>Takticki suskavac</p>
+                        <p class="price">3,000.00 RSD</p>
+                    </a>
+                    <a href="taktickiRanac.html" class="product-item">
+                        <img src="ranac.jpg" alt="Taktički ranac">
+                        <p>Taktički ranac</p>
+                        <p class="price">2,790.00 RSD</p>
+                    </a>
+                </div>
+                <a href="Kategorije.html" class="view-all">Pogledaj sve</a>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <p>&copy; 2023 Vojna Oprema</p>
+    </footer>
+    <div id="korpa" class="korpa-sidebar">
+        <button onclick="toggleKorpaSidebar()" class="close-korpa">X</button>
+        <h2>Vaša Korpa</h2>
+        <div class="korpa-content">
+            <button onclick="window.location.href='index.html'">Pocetna</button>
+            <button onclick="toggleKorpaSidebar()">Nastavi sa kupovinom</button>
+        </div>
+        <button onclick="clearCart()" class="clear-cart-btn">Očisti Korpu</button>
+        <br>
+        <button onclick="orderItems()" class="order-btn">Poruči</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

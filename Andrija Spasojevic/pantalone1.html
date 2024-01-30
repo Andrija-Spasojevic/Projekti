@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vojna Oprema - Pantalone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+    <div class="main-content"> 
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Vojne Opreme">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="jakne.html">Jakne</a></li>
+                <li><a href="pantalone.html">Pantalone</a></li>
+                <li><a href="rancevi.html">Rančevi</a></li>
+                <li><a href="cizme.html">Čizme</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="korpa-ikonica">
+            <i class="fas fa-shopping-cart"></i>
+        </div>        
+    </header>
+    <main class="pantalone-details-container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="pantalone1Velike.png" class="pantalone-image magnific">
+                    <img src="pantalone1.jpeg" alt="Vojna vetrovka">
+                    <i class="fas fa-search lupa-ikona"></i>
+                </a>
+                
+                <ul class="pantalone-features-list">
+                    <li>Materijal: 80% Poliester + 20% Pamuk</li>
+                    <li>Postava od flisa</li>
+                    <li>Vodootporna</li>
+                    <li>Vetronepropusna</li>
+                    <li>Paropropusna</li>
+                    <li>Steznici oko zglobova i struka</li>
+                    <li>Kapuljača koja se skida</li>
+                </ul>             
+            </div>
+           
+            <div class="col-md-6">
+                <h1 class="pantalone-title">Air 2 vojne pantalone</h1>
+                <div class="pantalone-price">5,500.00 RSD</div>
+                <label for="velicina" class="label-velicina">Veličina</label>
+                <div class="sizes">
+                    <button class="pantalone-size-btn">S</button>
+                    <button class="pantalone-size-btn">M</button>
+                    <button class="pantalone-size-btn">L</button>
+                    <button class="pantalone-size-btn">XL</button>
+                    <button class="pantalone-size-btn">XXL</button>
+                </div>
+                <label for="boja" class="label-boja">Boja</label>
+                <div class="sizes boje">
+                    <button id="boja-maslinasta" class="pantalone-color-btn">Maslinasta</button>
+                </div>                
+                <div class="pantalone-info">
+                    <button class="pantalone-quantity-btn minus">-</button>
+                    <input type="text" value="1" class="pantalone-quantity-input">
+                    <button class="pantalone-quantity-btn plus">+</button>
+                    <br>
+                    <button class="pantalone-add-to-cart-btn">Dodaj u korpu</button>
+                    <div class="pantalone-delivery-info">Stiže za 1-2 dana</div>
+                    <div class="pantalone-shipping-info">Poštarina 480 rsd</div>
+                    <img src="pantaloneVelicina.png" alt="Vojna vetrovka" class="velicina"> 
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Vojna Oprema</p>
+    </footer>
+    </div>
+    <div id="korpa" class="korpa-sidebar">
+        <button onclick="toggleKorpaSidebar()" class="close-korpa">X</button>
+        <h2>Vaša Korpa</h2>
+        <div class="korpa-content">
+            <button onclick="window.location.href='index.html'">Pocetna</button>
+            <button onclick="toggleKorpaSidebar()">Nastavi sa kupovinom</button>
+        </div>
+        <button onclick="clearCart()" class="clear-cart-btn">Očisti Korpu</button>
+        <br>
+        <button onclick="orderItems()" class="order-btn">Poruči</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

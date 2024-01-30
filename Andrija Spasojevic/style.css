@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+}
+
+.background-container {
+    height: 100vh;
+    background-image: url('vojnaoprema.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    position: relative;
+    z-index: 2; 
+    max-width: 600px;
+    margin: auto; 
+    padding: 50px 20px;
+    margin-top: 13%;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: -1; 
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);
+    z-index: -1; 
+}
+header {
+    background-color: #333D29;
+    color: white;
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo, nav {
+    margin: 0 10px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul li a.active {
+    font-weight: bold; 
+    text-decoration: underline;
+    color: black; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    opacity: 90%;
+}
+
+main {
+    text-align: center;
+    color: white; 
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+.naslov {
+    font-size: 60px; 
+    font-weight: bold;
+    color: black; 
+    text-align: left;
+    margin-bottom: auto;
+}
+
+.featured-products{
+    background-color: white; 
+    color: black;
+    padding: 50px 20px; 
+    text-align: center;
+    margin:auto;
+}
+.transition-space {
+    height: 100vh; 
+}
+.product-section {
+    text-align: center; 
+    margin: 20px; 
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding: 20px 0; 
+}
+.product-description {
+    text-align: center;
+    width: 100%;
+    margin-top: auto; 
+    padding: 10px 0;
+}
+.product-item {
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+    color: black; 
+    margin-bottom: 20px;
+    overflow: hidden; 
+    background-color: rgb(204, 191, 191);
+    transition: transform 0.3s ease;
+    justify-content: space-between; 
+    height: 400px; 
+}
+
+
+.product-item img {
+  
+    width: 100%; 
+    height: 250px;
+    object-fit: cover; 
+    margin-bottom: auto; 
+}
+
+.product-item:hover img {
+    transform: scale(1.05); 
+}
+
+.product-item p {
+    margin: 0; 
+    padding: 5px 0; 
+    text-align: center;
+    min-height: 50px;
+}
+
+.product-item:hover p {
+    text-decoration: underline; 
+}
+
+.price {
+    font-weight: bold;
+    background-color: rgb(204, 191, 191);
+    display: block; 
+    text-align: center;
+    margin-top: auto; 
+    padding: 5px 0;
+    width: 100%;
+    min-height: 30px; 
+    margin-bottom: 10px
+}
+
+.view-all {
+    display: inline-block;
+    background-color: black; 
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin: 20px 0; 
+    border: none;
+    cursor: pointer; 
+
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 7px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 7px 10px;
+    background-color: #333D29;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #2b2f21;
+}
+
+a.removeunderline{
+    text-decoration: none;
+}
+
+.pantalone-details-container {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+}
+
+.pantalone-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.pantalone-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pantalone-price {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.pantalone-color-btn, .pantalone-size-btn {
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pantalone-color-btn.active, .pantalone-size-btn.active,
+.pantalone-color-btn:hover, .pantalone-size-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.pantalone-quantity-control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pantalone-quantity-btn {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.pantalone-quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.pantalone-add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pantalone-delivery-info,
+.pantalone-shipping-info,
+.pantalone-exchange-info {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pantalone-add-to-cart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pantalone-features-list {
+    padding-left: 20px; 
+    margin-top: 20px; 
+}
+.velicina{
+    margin-top: 50px;
+}
+.label-boja, .label-velicina {
+    display: block;
+    margin-top: 20px;
+    color: #aaa; /* sivkasta boja */
+    margin-bottom: 5px;
+}
+
+.boje .pantalone-color-btn {
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.boje .pantalone-color-btn.active, 
+.boje .pantalone-color-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.pantalone-image {
+    position: relative;
+    display: inline-block;
+}
+
+.lupa-ikona {
+    position: absolute;
+    top: 10px;  
+    left: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.pantalone-image:hover .lupa-ikona {
+    color: #333D29; 
+}
+.korpa-ikonica {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.korpa-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, .5);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+    z-index: 1000; /* Da bi korpa bila iznad svega ostalog */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Dodajte skrol ako je sadržaj veći od visine */
+}
+
+.korpa-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.korpa-item-image {
+    width: 50px; /* ili bilo koja veličina koju želite */
+    height: auto;
+    margin-right: 10px;
+}
+
+.korpa-item-details {
+    flex-grow: 1;
+}
+
+.korpa-item-title,
+.korpa-item-price {
+    margin: 0;
+}
+
+.korpa-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.korpa-item-quantity input {
+    width: 50px; /* fiksna širina za input */
+    text-align: center;
+    margin: 0 5px;
+}
+
+.korpa-item-remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.korpa-sidebar.active {
+    transform: translateX(0);
+}
+.blur-background {
+    filter: blur(5px); /* Podesite vrednost po potrebi */
+}
+.categories-container {
+    text-align: center;
+}
+
+.category-button {
+    display: block;
+    width: 70%;
+    padding: 20px;
+    margin: 10px auto;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-button:hover {
+    background-color: #0056b3;
+}
+.category-button {
+    background-color: #333D29; 
+    margin-bottom: 103px;
+    margin-top: 104px;
+}
+
+.category-button:hover {
+    background-color: #333d40;
+}
+.tekst{
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold;
+}
+.about-us-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.about-us-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us-section .content {
+    max-width:
+800px;
+margin: auto;
+text-align: left;
+font-size: 1.1em;
+line-height: 1.6;
+margin-bottom: 25%;
+}
+.contact-section {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #333D29;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 28%;
+}
+
+.contact-form button:hover {
+    background-color: #2b2f21;
+}
+
+/* Dodatni stilovi po potrebi */
